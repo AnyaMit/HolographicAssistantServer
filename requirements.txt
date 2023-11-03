@@ -2,7 +2,7 @@ Flask==2.0.2
 gunicorn
 flask-restful
 flask-apispec
-./local_wheel/langchain-0.0.180-py3-none-any.whl
+langchain==0.0.277
 openai
 google-search-results
 redis
@@ -12,4 +12,4 @@ faiss-cpu
 tiktoken
 azure-storage-blob
 azure-identity
-https://pkgs.dev.azure.com/azure-sdk/29ec6040-b234-4e31-b139-33dc4287b756/_packaging/3572dbf9-b5ef-433b-9137-fc4d7768e7cc/pypi/download/azure-search-documents/11.4a20230509004/azure_search_documents-11.4.0a20230509004-py3-none-any.whl#sha256=6215e9a4f9e935ff3eac1b7d5519c6c0789b4497eb11242d376911aaefbb0359
+azure-search-documents==11.4.0b8
