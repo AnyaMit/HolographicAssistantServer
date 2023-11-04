@@ -10,11 +10,11 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 2. Open VS Code in the root folder of this project.
 3. Open example-setupenv.py 
 4. Select Run and Debug in VS Code, Select Python Current File, Select the Green play button.
-![image](images\runcurrentfile.png)
-5. This should execute correctly and do nothing, and open up a terminal.
-6. In the Terminal window create a Python environment. `python -m venv .venv`
-7. If successful you will see a new folder ".venv"
-8. Close VS Code.
+![image](https://github.com/CameronVetter/HolographicAssistantServer/blob/main/images/runcurrentfile.png?raw=true)
+1. This should execute correctly and do nothing, and open up a terminal.
+2. In the Terminal window create a Python environment. `python -m venv .venv`
+3. If successful you will see a new folder ".venv"
+4. Close VS Code.
    
 # Exercises
 1. Open the Exercise 1 folder in Github and complete that exercise.
