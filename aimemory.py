@@ -13,21 +13,10 @@ def get_vectorstore_azureSearch():
 
     vector_store = get_vector_store()
     
-    retriever = vector_store.as_retriever(search_kwargs=dict(k=1))
-    memory = VectorStoreRetrieverMemory(retriever=retriever, input_key="input")
+    retriever = vector_store.as_retriever(search_kwargs=dict(k=5))
+    memory = VectorStoreRetrieverMemory(retriever=retriever, memory_key="history", input_key="input")
     
     return memory
-
-from typing import List
-from langchain.docstore.document import Document
-
-def create_memory_azureSearch(memory: List[Document]):
-    from langchain.document_loaders import TextLoader
-    from langchain.text_splitter import CharacterTextSplitter
-
-    vector_store = get_vector_store()
-
-    return vector_store.add_documents(documents=memory)
 
 def get_vector_store():
     import os
