@@ -10,13 +10,15 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 2. Open VS Code in the root folder of this project.
 3. Open example-setupenv.py 
 4. Select Run and Debug in VS Code, Select Python Current File, Select the Green play button.
+
 ![image](https://github.com/CameronVetter/HolographicAssistantServer/blob/main/images/runcurrentfile.png?raw=true)
-1. This should execute correctly and do nothing, and open up a terminal.
-2. In the Terminal window create a Python environment. `python -m venv .venv`
-3. If successful you will see a new folder ".venv"
-4. Close VS Code.
+
+5. This should execute correctly and do nothing, and open up a terminal.
+6. In the Terminal window create a Python environment. `python -m venv .venv`
+7. If successful you will see a new folder ".venv"
+8. Close VS Code.
    
 # Exercises
-1. Open the Exercise 1 folder in Github and complete that exercise.
-2. **WHEN INSTRUCTED** Open Exercise 2 folder in Github and complete the exercise.
+1. Open the [Exercise 1 folder](https://github.com/CameronVetter/HolographicAssistantServer/tree/main/Exercise1) in Github and complete that exercise.
+2. **WHEN INSTRUCTED** Open [Exercise 2 folder](https://github.com/CameronVetter/HolographicAssistantServer/tree/main/Exercise2) in Github and complete the exercise.
 3. **Remember** If you do not complete Exercise 2, This folder contains the completed exercise!
