@@ -3,9 +3,8 @@ setupenv.setup()
 
 import ai
 import aimemory
-short_term_memory = aimemory.get_memory_redis()
-long_term_memory = aimemory.get_vectorstore_azureSearch()
-memory = aimemory.get_combined_memory(short_term_memory, long_term_memory)
+#memory = aimemory.get_memory_short()
+memory = aimemory.get_vectorstore_azureSearch()
 agent_chain = ai.get_agent_chain(memory)
 
 from flask import Flask
@@ -49,33 +48,6 @@ class Chat(MethodResource, Resource):
 
 api.add_resource(Chat, '/chat')
 docs.register(Chat)
-
-class Dream_Response_Schema(Schema):
-    Dreamed = fields.Bool(default=False, description="Did the AI dream?")
-
-class Dream(MethodResource, Resource):
-    @doc(description='Enters dream state to persist short term to long term memory', tags=['Dream'])
-    @marshal_with(Dream_Response_Schema)
-    def post(self, **kwargs):
-        return { 'Dreamed': ai.dream(short_term_memory)}
-
-api.add_resource(Dream, '/dream')
-docs.register(Dream)
-
-class Packages_Response_Schema(Schema):
-    Packages = fields.List(default=[], description="List of Packages", cls_or_instance=fields.String())
-
-class Packages(MethodResource, Resource):
-    @doc(description='Lists Packages', tags=['Packages'])
-    @marshal_with(Packages_Response_Schema)
-    def get(self, **kwargs):
-        import pkg_resources
-        installed_packages = [(d.project_name, d.version) for d in pkg_resources.working_set]
-        return { 'Packages': installed_packages}
-
-api.add_resource(Packages, '/packages')
-docs.register(Packages)
-
 
 if __name__ == '__main__':
    app.run()
