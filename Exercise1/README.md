@@ -7,7 +7,7 @@ This repo is part of a Workshop and may not be very useful if you are not curren
    
 ![image](https://github.com/CameronVetter/HolographicAssistantServer/blob/main/images/venv.png?raw=true)
    
-# Exercise 1
+# Part 1
 1. Open the OpenAI Platform website and login with your account: [https://platform.openai.com/](https://platform.openai.com/)
 2. In your account profile "View API Keys"
 3. Click Create new secret key
@@ -18,7 +18,7 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 8. Modify the JSON body to have a prompt of "Are you alive?"
 9. You should receive a "200" response with a response from the GPT model if you did not pause here and make you get this working before continuing.
 
-# Exercise 2
+# Part 2
 1. Ask the model "What is your name?"
 2. Ask the model "What is your purpose?"
 3. Notice that the responses are lacking.  Lets fix that by changing the prompt to make it more interesting. In AI.py change these two variables:
@@ -33,8 +33,8 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 6. Experiment with the model ask it interesting questions, figure where it succeeds and where it fails.
 7. Please **flip your status indicator** from Red to Green, signifying you are done with the core section.
    
-# Exercise EXTRA TIME
+# EXTRA TIME
 1. Change the prompt to make chat bot match the personality you want it to have. Try things you think are odd or could never work, experiment and have fun. (Save this prompt to bring with you to future exercises.)
 
-# Exercise EXTRA EXTRA TIME
+# EXTRA EXTRA TIME
 1. Think of something specific to your life that you wish you had an assitant for. Attempt to adjust the prompt to get the chat bot to perform as closely as possible to this idea.
