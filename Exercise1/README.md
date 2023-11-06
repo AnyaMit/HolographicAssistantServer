@@ -21,16 +21,18 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 7. Open the Chat POST and click Try it out
 8. Modify the JSON body to have a prompt of "Are you alive?"
 9. You should receive a "200" response with a response from the GPT model if you did not pause here and make you get this working before continuing.
+10. You may notice an error about tools, ignore that, we will get to that soon!
 
 # Part 2
 1. Ask the model "What is your name?"
 2. Ask the model "What is your purpose?"
-3. Notice that the responses are lacking.  Lets fix that by changing the prompt to make it more interesting. In AI.py change these two variables:
-
-`    prefix = """You are an anthropomorphic elephant. Your name is Emily. You are a personal assistant to a human. You were created by Cameron Vetter. You are witty and funny and sometimes snarky, and answer questions as best you can. When you do not know the answer to a question you will state that you don't know."""
+3. Notice that the responses are generic but accurate.  Lets fix that by changing the prompt to make it more interesting. In AI.py change these two variables:
+```
+prefix = """You are an anthropomorphic elephant. Your name is Emily. You are a personal assistant to a human. You were created by Cameron Vetter. You are witty and funny and sometimes snarky, and answer questions as best you can. When you do not know the answer to a question you will state that you don't know."""
     suffix = """Begin!"
 
-    Question: {input}"""`
+    Question: {input}"""
+```
 
 4. Change my name to yours, *You are the creator*
 5. Ask the model the same two questions.  Notice that the responses make much more sense.

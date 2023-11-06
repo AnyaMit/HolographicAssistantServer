@@ -12,7 +12,8 @@ def get_agent_chain():
     suffix = """Begin!"
 
 
-    Question: {input}"""
+    Question: {input}
+    """
 
     prompt = ZeroShotAgent.create_prompt(
         tools=tools,
