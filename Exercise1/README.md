@@ -9,7 +9,7 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 
 3. You will have to navigate to python.exe in the correct environment folder, for my machine it looked like this:
 
-![image](https://github.com/CameronVetter/HolographicAssistantServer/blob/main/images/selectenv.png?raw=true)
+![image](https://github.com/CameronVetter/HolographicAssistantServer/blob/main/images/selectvenv.png?raw=true)
 
 # Part 1
 1. Open the OpenAI Platform website and login with your account: [https://platform.openai.com/](https://platform.openai.com/)
