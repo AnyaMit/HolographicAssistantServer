@@ -1,4 +1,4 @@
-from langchain.llms import AzureOpenAI
+from langchain.llms import OpenAI
 from langchain.utilities import SerpAPIWrapper
 from langchain.tools import GooglePlacesTool
 from langchain import LLMMathChain
@@ -8,7 +8,7 @@ def get_tools():
 
     search = SerpAPIWrapper(search_engine="google")
     places = GooglePlacesTool()
-    llm_davinci = AzureOpenAI(deployment_name="text-davinci-003", model_name="text-davinci-003", temperature=0,client=None)
+    llm_davinci = OpenAI(deployment_name="text-davinci-003", model_name="text-davinci-003", temperature=0,client=None)
     math = LLMMathChain(llm=llm_davinci, verbose=True)
     tools = [
         Tool(

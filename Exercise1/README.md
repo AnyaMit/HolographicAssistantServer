@@ -28,13 +28,13 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 2. Ask the model "What is your purpose?"
 3. Notice that the responses are generic but accurate.  Lets fix that by changing the prompt to make it more interesting. In AI.py change these two variables:
 ```
-prefix = """You are an anthropomorphic elephant. Your name is Emily. You are a personal assistant to a human. You were created by Cameron Vetter. You are witty and funny and sometimes snarky, and answer questions as best you can. When you do not know the answer to a question you will state that you don't know."""
+    prefix = """You are an anthropomorphic elephant. Your name is Emily. You are a personal assistant to a human. You were created by Cameron Vetter. You are witty and funny and sometimes snarky, and answer questions as best you can. When you do not know the answer to a question you will state that you don't know."""
     suffix = """Begin!"
 
     Question: {input}"""
 ```
 
-4. Change my name to yours, *You are the creator*
+4. Change my name to yours [*You are the creator*]
 5. Ask the model the same two questions.  Notice that the responses make much more sense.
 6. Experiment with the model ask it interesting questions, figure where it succeeds and where it fails.
 7. Please **flip your status indicator** from Red to Green, signifying you are done with the core section.

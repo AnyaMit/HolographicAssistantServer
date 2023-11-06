@@ -7,7 +7,7 @@ import aimemory
 memory = aimemory.get_memory_short()
 #memory = aimemory.get_vectorstore_azureSearch()
 
-agent_chain = ai.get_agent_chain(memory)
+agent_chain = ai.get_agent_chain()
 
 from flask import Flask
 from flask_restful import Resource, Api
