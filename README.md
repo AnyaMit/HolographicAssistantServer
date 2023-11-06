@@ -37,4 +37,10 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 # Exercises
 1. Open the [Exercise 1 folder](https://github.com/CameronVetter/HolographicAssistantServer/tree/main/Exercise1) in Github and complete that exercise.
 2. **WHEN INSTRUCTED** Open [Exercise 2 folder](https://github.com/CameronVetter/HolographicAssistantServer/tree/main/Exercise2) in Github and complete the exercise.
-3. **Remember** If you do not complete Exercise 2, This folder contains the completed exercise!
+
+# Help we are moving on and I'm not done!
+**Remember** If you do not complete Exercise 2, This folder contains the completed exercise!
+1. Open this folder in VS Code
+2. Add the keys into setupenv.py (as instructed in the exercises) 
+3. Run the flask server.  
+4. Verify you are able to open the swagger ui here: http://127.0.0.1:5000/swagger/ 

@@ -92,3 +92,6 @@ agent_chain = ai.get_agent_chain(memory)
 7. Tell it the name of that family member.  I said "My daughters name is Alexandria."
 8. Now ask GPT for the name again.  I asked "What is my daughters name?"
 9. Success!  Take a close look at the debug window and see how GPT used the memory to answer the question.
+
+# EXTRA TIME
+1. Take a look at some of the other tools https://python.langchain.com/docs/integrations/tools.  Integrate another tool you find interesting and experiment with it.
