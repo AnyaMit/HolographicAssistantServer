@@ -12,9 +12,10 @@ def get_agent_chain():
     Question: {input}"""
 
     prompt = ZeroShotAgent.create_prompt(
+        tools=[],
         prefix=prefix, 
         suffix=suffix, 
-        input_variables=["history", "input", "agent_scratchpad"]
+        input_variables=["input"]
     )
 
 
