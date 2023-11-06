@@ -6,7 +6,11 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 2. Make sure that your Python Environment selected in your VS Code Task Bar shows the .VENV python environment created previously. (This is only visible if a python file is currently open.)
    
 ![image](https://github.com/CameronVetter/HolographicAssistantServer/blob/main/images/venv.png?raw=true)
-   
+
+3. You will have to navigate to python.exe in the correct environment folder, for my machine it looked like this:
+
+![image](https://github.com/CameronVetter/HolographicAssistantServer/blob/main/images/selectenv.png?raw=true)
+
 # Part 1
 1. Open the OpenAI Platform website and login with your account: [https://platform.openai.com/](https://platform.openai.com/)
 2. In your account profile "View API Keys"
