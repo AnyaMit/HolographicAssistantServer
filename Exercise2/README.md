@@ -14,24 +14,23 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 # Part 1
 1. Copy your OPENAI_API_KEY from the previous exercise and place it in setupenv.py
 2. Lets get our first tool working.  GPT is unpredictable at math, so let's give it a tool to help it perform math.
-3. Run the flask server and open the swagger ui: http://127.0.0.1:5000/swagger/
-4. Open ai.py, replace the line `tools = []` with this code:
+3. Open ai.py, replace the line `tools = []` with this code:
 
 ```
     import aitools
     tools = aitools.get_tools()
 ```
 
-5. Add the following to the end of the prefix `You have access to the following tools:` If you are using the exact prompt provided it will now ook like this:
+4. Add the following to the end of the prefix `You have access to the following tools:` If you are using the exact prompt provided it will now ook like this:
 
 ```
     prefix = """You are an anthropomorphic elephant. Your name is Emily. You are a personal assistant to a human. You were created by Cameron Vetter. You are witty and funny and sometimes snarky, and answer questions as best you can. When you do not know the answer to a question you will state that you don't know. You have access to the following tools:"""
 ```
 
-6. Run the flask server and open the swagger ui: http://127.0.0.1:5000/swagger/
-7. Try the "Post Chat" method, and send the message "What is 1000 * 1234 + 50?"  Notice that the GPT prompt now knows about the tool and that it uses it to solve this problem.
-8. Try a much more complicated math problem "What is the square root of 300?"  Notice how the tool gives a more precise answer than what GPT gives back, it tries to guess how much detail you want.
-9. Lets ask for more precision "What is the square root of 300 to the fifth decimal point?"  Most likely it tries to execute some python code, Well at least it tried...  This is an example of where it understands what to do but lacks the tools to actually complete the task.  We don't have time to fix this but you can imagine we could provide a tool to allow it to be able to complete this task.
+5. Run the flask server and open the swagger ui: http://127.0.0.1:5000/swagger/
+6. Try the "Post Chat" method, and send the message "What is 1000 * 1234 + 50?"  Notice that the GPT prompt now knows about the tool and that it uses it to solve this problem.
+7. Try a much more complicated math problem "What is the square root of 300?"  Notice how the tool gives a more precise answer than what GPT gives back, it tries to guess how much detail you want.
+8. Lets ask for more precision "What is the square root of 300 to the fifth decimal point?"  Most likely it tries to execute some python code, Well at least it tried...  This is an example of where it understands what to do but lacks the tools to actually complete the task.  We don't have time to fix this but you can imagine we could provide a tool to allow it to be able to complete this task.
 
 # Part 2
 1. Lets turn this thing loose on the internet.
