@@ -1,15 +1,10 @@
 import openai
-import os
-openai.api_type = os.environ["OPENAI_API_TYPE"]
-openai.api_version = os.environ["OPENAI_API_VERSION"]
-openai.api_base = os.environ["OPENAI_API_BASE"]
-openai.api_key =  os.environ["OPENAI_API_KEY"]
 
 from datetime import datetime, timezone
 last_time = datetime.now()
 
 def get_agent_chain(memory):
-    from langchain.chat_models import AzureChatOpenAI
+    from langchain.chat_models import ChatOpenAI
     from langchain import LLMChain
     from langchain.agents import ZeroShotAgent, AgentExecutor
 
@@ -32,7 +27,7 @@ def get_agent_chain(memory):
     )
 
 
-    llm = AzureChatOpenAI(deployment_name="gpt4small", openai_api_version="2023-03-15-preview", temperature=0.5, client=None)
+    llm = ChatOpenAI(model_name="gpt-4-0613", temperature=0.5, client=None)
     llm_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
     agent = ZeroShotAgent(llm_chain=llm_chain, tools=tools, verbose=True, max_iterations=5, return_intermediate_steps=True)
     agent_chain = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True, memory=memory, handle_parsing_errors="Check your output and make sure it conforms!", return_intermediate_steps=True)
