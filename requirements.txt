@@ -3,7 +3,7 @@ gunicorn
 flask-restful
 flask-apispec
 langchain==0.0.277
-openai
+openai==0.28
 google-search-results
 redis
 googlemaps
