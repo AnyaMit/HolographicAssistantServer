@@ -5,6 +5,7 @@ This repo is part of a Workshop and may not be very useful if you are not curren
 **Windows Recommended (OS X should work but it is untested)**
 - Visual Studio Code (https://code.visualstudio.com/download)
 - Unity 2022.3 LTS Version Free version (https://unity.com/download)
+- Valid Azure Subscription ( https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers/)
 - Valid Open AI Subscription or Azure Open AI Preview Access (https://openai.com/) 
 - Python 3.10 (https://www.python.org/downloads/release/python-31011/)
 - Looking Glass Bridge 2.3.2 (https://lookingglassfactory.com/software/looking-glass-bridge)
