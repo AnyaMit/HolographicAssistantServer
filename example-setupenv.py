@@ -1,7 +1,7 @@
 import os
 
 def setup():
-    os.environ["OPENAI_API_KEY"] = '<YOURKEY>'
+    os.environ["OPENAI_API_KEY"] = '<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>'
 
     os.environ["SERPAPI_API_KEY"] = '<YOURKEY>'
     os.environ["GPLACES_API_KEY"] = '<YOURKEY>'
